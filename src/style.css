@@ -81,3 +81,11 @@ html{scroll-padding-top:100px}
 @media(max-width:700px) and (max-height:740px){.header-layer header,.header-layer header.is-scrolled{height:68px}.hero{padding-top:68px}}
 .header-layer .header-cta,.header-layer header.is-scrolled .header-cta{background:var(--brand-blue);color:#fff;border-color:var(--brand-blue)}
 .header-layer .header-cta:hover,.header-layer header.is-scrolled .header-cta:hover{background:#07558a;border-color:#07558a;box-shadow:none}
+/* Botanical silhouettes echo the original contact section. */
+.contact{position:relative;isolation:isolate;overflow:hidden;background:#f5e7ed}
+.contact:before,.contact:after{content:'';position:absolute;z-index:-1;pointer-events:none;background:url('/images/palm-frond.svg') center/contain no-repeat;width:440px;height:700px;opacity:.14}
+.contact:before{left:-185px;bottom:-210px;transform:rotate(-35deg)}
+.contact:after{right:-135px;top:-235px;transform:rotate(145deg);opacity:.12}
+@media(max-width:700px){.contact:before{width:320px;height:530px;left:-190px;bottom:-115px;opacity:.12}.contact:after{width:310px;height:510px;right:-165px;top:-195px;opacity:.11}}
+.contact-leaf{display:none}
+@media(min-width:1024px){.contact-leaf{display:block;position:absolute;z-index:-1;pointer-events:none;background:url('/images/palm-frond.svg') center/contain no-repeat;width:290px;height:490px;opacity:.075}.contact-leaf-center-one{left:31%;top:-235px;transform:rotate(155deg)}.contact-leaf-center-two{left:43%;bottom:-270px;transform:rotate(-23deg)}}
